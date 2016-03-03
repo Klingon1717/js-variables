@@ -5,14 +5,19 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<input id="myInput" type="text" value="test"/>
+<!--variables pt.1<input id="myInput" type="text" value="test"/> -->
 <button id="stylesChanger">change</button>
 <div id="firstDiv">i don't wannnnaaa change</div>
 <script type="text/Javascript">
-	var newText = document.getElementById("myInput").value;
+	var myArray = new Array();
+	myArray[0]="pizza";
+	myArray[1]="apple";
 	document.getElementById("stylesChanger").onclick=function(){
-		document.getElementById("firstDiv").innerHTML= newText;
+		document.getElementById("firstDiv").innerHTML= myArray[0];
 	}
+	/*variables pt.1
+	var newText = document.getElementById("myInput").value;
+	*/
 </script>
 </body>
 </html>
