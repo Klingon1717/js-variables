@@ -5,12 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<button id="hi">change</button>
-<div id="one">i don't wannnnaaa change</div>
+<input id="myInput" type="text" value="test"/>
+<button id="stylesChanger">change</button>
+<div id="firstDiv">i don't wannnnaaa change</div>
 <script type="text/Javascript">
-	var a ="one";
-	document.getElementById("hi").onclick=function(){
-		document.getElementById(a).style.display="none";
+	var newText = document.getElementById("myInput").value;
+	document.getElementById("stylesChanger").onclick=function(){
+		document.getElementById("firstDiv").innerHTML= newText;
 	}
 </script>
 </body>
