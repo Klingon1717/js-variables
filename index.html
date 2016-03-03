@@ -5,11 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<p>What is the weather?</p>
+<input id="weather"/>
+<button id="submit">submit</button>
 <!--variables pt.1<input id="myInput" type="text" value="test"/> 
 arrays <div id="firstDiv">i don't wannnnaaa change</div>-->
 
 <script type="text/Javascript">
 	
+	document.getElementById("submit").onclick=function(){
+		document.getElementById("weather").value=innerHTML("weather");
+	}
+	/*if statements
 	var x=1;
 
 	if(x==1){
