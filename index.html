@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+<p>HOW MANY FANNGAS AM I THROOOWWIIINN AAAROOUUNND?</p>
+<input id="answer"/>
+<button id="submit">getcha guess on</button>
 <!--if/else statements
 <p>What is the weather?</p>
 <input id="weather"/>
@@ -13,13 +16,24 @@ variables pt.1<input id="myInput" type="text" value="test"/>
 arrays <div id="firstDiv">i don't wannnnaaa change</div>-->
 
 <script type="text/Javascript">
+	document.getElementById("submit").onclick=function(){
+		var x = Math.random();
+		x=6*x;
+		x=Math.floor(x);
+		if(x==document.getElementById("answer").value){
+			alert('riiiiiggggghhhhttoooo');
+		}
+		else{
+			alert("wrrrooonnnnggooo my number was" + ' ' + x);
+		}
+	}
 	
-	
+	/*generate random whole num 1-5
 	var x = Math.random();
-	x=5*x;
+	x=6*x;
 	x=Math.floor(x);
-	alert(x);
-
+	alert(x);*/
+		
 	// generate a random number alert(Math.random());
 	/*square root
 	alert(Math.pow(5, 2));
